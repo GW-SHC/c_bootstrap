@@ -8,6 +8,7 @@ Feel free to update this with any resources you find.
 
 - See Essential C at http://cslibrary.stanford.edu/.
 - See Pointers and Memory, and Lists and trees at http://cslibrary.stanford.edu/.
+- See http://shah7.com/c.pdf for an excessivly indepth guide on C. 
 
 What resources have you found?  Post them in this repo!
 
