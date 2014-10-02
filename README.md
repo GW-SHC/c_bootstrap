@@ -9,7 +9,7 @@ Feel free to update this with any resources you find.
 - See Essential C at http://cslibrary.stanford.edu/.
 - See Pointers and Memory, and Lists and trees at http://cslibrary.stanford.edu/.
 - See http://shah7.com/c.pdf for an excessively indepth guide on C. The original!
-- For an extremely in-depth description of coding style for readability for systems code, see the (`Composite` style guide)[https://github.com/gparmer/Composite/blob/master/doc/style_guide/composite_coding_style.pdf?raw=true].  I'd suggest avoiding this till you've had some experience seeing a fair amount of C code.
+- For an extremely in-depth description of coding style for readability for systems code, see the [`Composite` style guide](https://github.com/gparmer/Composite/blob/master/doc/style_guide/composite_coding_style.pdf?raw=true).  I'd suggest avoiding this till you've had some experience seeing a fair amount of C code.
 
 What resources have you found?  Post them in this repo!
 
