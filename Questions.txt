@@ -1,7 +1,7 @@
 10/12/14 - 10/19/14
 1. Why can a pointer be considered an array and an array a pointer?
-2. What are the details of using malloc inside of a fuction? Gerneral 	      idea?
-3. Difference between .h and .lib? Definitions from online do not provide 	   much insight.
+2. What are the details of using malloc inside of a fuction? Gerneral idea?
+3. Difference between .h and .lib? Definitions from online do not provide much insight.
 4. What are structures and unions? 
 	4a. What are the structures and unions of the basic types: int, char, short, long and double?
 5. Why would we use bitwise operators? How do they work?
