@@ -65,3 +65,7 @@ But what if we leveraged awesome?  Now say use each bit in an array of ints to r
 They are most commonly used to store more data in values that you can fit into 32 bits.
 
 Again:  Why?  Because you want to better use memory.
+
+10/30/14
+
+1. Christmas is coming up, any good reading that is generaly related to the club that would be nice to own a solid copy of?
