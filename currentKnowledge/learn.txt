@@ -1,1 +1,0 @@
-Currently I know the majority of C's syntax, how to create methods and how to use basic pointers in context of Arrays, and in context of methods taking in arrays as parameters.
