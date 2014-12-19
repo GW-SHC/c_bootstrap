@@ -24,10 +24,10 @@ main(void){
 	printf("Linked List length = %d \n\n", count);
 	
 	/*********************************************/
-	int* x = (int)ll_toArray(h);
+	void** x = ll_to_array(h);
 	printf("Array Values outside of method\n");
 	int i;
-	for (i = 0; i < ll_length(h)*2; i++){
+	for (i = 0; i < ll_length(h); i++){
 		printf("%d ", x[i]);
 	}printf("\n\n");
 	

@@ -1,17 +1,17 @@
 #include <stdio.h>
-#include <stdlib.h> /*for malloc*/
-struct Node{
+
+struct node{
 	void* data;
-	struct Node* prev;
-	struct Node* next;
+	struct node* prev;
+	struct node* next;
 };
 
 struct
 linked_list{
-	struct Node* head;
+	struct node* head;
 };
 
-struct Node* ll_create(void);
+struct node* ll_create(void);
 
 void ll_destroy(struct linked_list h);
 
@@ -31,7 +31,7 @@ int ll_length(struct linked_list h);
 
 int ll_contains (struct linked_list h, void* value);
 
-void* ll_toArray(struct linked_list h);
+void** ll_to_array(struct linked_list h);
 
 void print(struct linked_list h);
 
