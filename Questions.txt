@@ -66,6 +66,9 @@ They are most commonly used to store more data in values that you can fit into 3
 
 Again:  Why?  Because you want to better use memory.
 
-10/30/14
+12/19/14
 
-1. Christmas is coming up, any good reading that is generaly related to the club that would be nice to own a solid copy of?
+Some questions that have been asked in person but should be written so all can see.
+
+6. What are the main factors that affect speed?
+7. C commands to access more compiler warnings?
