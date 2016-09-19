@@ -28,7 +28,12 @@ Why is this important? In C, arguments passed to functions are *copied* (the lin
 
 Instead, we can pass pointers to other functions. In essence, we're saying: "hey, you know that variable over there? Yeah, modify that one". This lets us make modifications to variables inside other functions and keep their value.
 
-**Exercise 3:** Run `pass-by-reference.c` and explore the concept. Once you're comfortable with the idea, include `complex.h` and make another function to add two complex numbers. Here is the signature: `void add_complex(struct *complex num1, struct complex *num2, struct complex *result);`
+**Exercise 3:** Run `pass-by-reference.c` and explore the concept. Once you're comfortable with the idea, include `complex.h` from module 2 and make another function to add two complex number parameters and store the result in a the third parameter. Here is the function prototype:
+
+```c
+void
+add_complex(struct *complex num1, struct complex *num2, struct complex *result);
+```
 
 Two final concepts surrounding pointers. First, is possible to point to "nowhere". This is done using the value `NULL`. Second, if you have a pointer to a struct, C has some nice syntax to easily dereference it and access a member variable:
 
@@ -43,6 +48,14 @@ number->real = 4;
 ```
 
 **Exercise 4:** Try setting a pointer value to `NULL` and dereferencing it. What happens?
+
+Let's revisit arrays briefly. Remember that 0 is the first index in an array. This choice makes calculating the address of an item in the array trivial using the address of the first item and the `sizeof` operator.
+
+**Exercise 5:** Write a formula for the address of the `i`th index of an array using `sizeof` and the address of the first element, `base`.
+
+One final note about pointers: it is possible to have a "generic" pointer that doesn't have a type associated with it. These pointer are called *void pointers*, denoted `void *`. This is just a pointer to "anything", it is just a memory location you can store. Void pointers cannot be dereferenced (because the compiler wouldn't know what type to assign the value). However, they are incredibly useful.
+
+For an in-depth discussion about pointers and arrays, read [this document](http://home.earthlink.net/~momotuk/pointers.pdf).
 
 ### Allocating Memory
 In the previous section, we didn't fully explain what "the heap" was. **The heap** is another region of memory where you can store variables, but these are not tied to the lifecycle of the parent function. Once memory is allocated on the heap, it stays there for the lifetime of your program or you explicitly release it. This is another important aspect of C: in some other languages (such as Java), heap memory is automatically returned once it is no longer referenced (a technique called ["Garbage Collection"](https://en.wikipedia.org/wiki/Garbage_collection_(computer_science)), which was the focus of a [past meeting](https://github.com/GW-SHC/info/wiki/Garbage-Collection-Basics). This is not the case in C, all heap memory used by your program must be explicitly allocated and released.
@@ -61,4 +74,4 @@ number = malloc(sizeof(struct complex); // We are allocating enough memory for t
 free(number); // Be sure to free when you're done!
 ```
 
-**Exercise 5:** Make another version of your complex number addition program, this time allocating memory for the structs on the heap instead of the stack.
+**Exercise 6:** Make another version of your complex number addition program from module 2, this time allocating memory for the structs on the heap instead of the stack.
