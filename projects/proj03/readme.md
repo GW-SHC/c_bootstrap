@@ -1,5 +1,6 @@
-# Bootstrapping C - Project 1
+# Bootstrapping C - Project 3
 ## GWU Systems Hacking Club
 
-**TODO**
-Make message board for webserver. Keep board in arrays (of custom struct), each with a linkedlist of messages
+In this project, you will add a message board to the webserver code you've been working with.
+
+**TODO** We should flesh this out and fill in the gaps once the basic page gets written.
