@@ -5,6 +5,14 @@ Anyone wanting to understand and do systems programming must know C.  You might 
 # Learning
 This repository contains a number of tutorials in the `modules` directory. They will walk you through many of the core concepts surrounding C and systems programming. Go through them at your own pace, making sure to do the exercises and projects along the way. Once you are done, you can keep the code in your own fork of this repository, and add them to the main one via a pull request. Put your code in the directory `submission/<your name>`.
 
+## Outline
+| Module | Topic | Project |
+| ------ | ----- | ------- |
+| [mod0](https://github.com/gw-shc/c_bootstrap/tree/master/modules/mod00) | Setup and background | -- |
+| [mod1](https://github.com/gw-shc/c_bootstrap/tree/master/modules/mod01) | Variables, control structures, and functions | [proj1](https://github.com/gw-shc/c_bootstrap/tree/master/projects/proj01) |
+| [mod2](https://github.com/gw-shc/c_bootstrap/tree/master/modules/mod02) | Arrays, structs, and unions | [proj2](https://github.com/gw-shc/c_bootstrap/tree/master/projects/proj02) |
+| [mod3](https://github.com/gw-shc/c_bootstrap/tree/master/modules/mod03) | Pointers and dynamic memory allocation | [proj3](https://github.com/gw-shc/c_bootstrap/tree/master/projects/proj03) |
+
 # Resources
 
 Feel free to update this with any resources you find.
