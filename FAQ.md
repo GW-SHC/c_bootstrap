@@ -1,60 +1,57 @@
-10/12/14 - 10/19/14
-1. Why can a pointer be considered an array and an array a pointer?
-2. What are the details of using malloc inside of a fuction? Gerneral idea?
-3. Difference between .h and .lib? Definitions from online do not provide much insight.
-4. What are structures and unions? 
-	4a. What are the structures and unions of the basic types: int, char, short, long and double?
-5. Why would we use bitwise operators? How do they work?
+# Frequently Asked Questions
+These are questions that have come up while others learned C. They are here for your reference, feel free to submit a PR with additional questions (or to answer existing questions)!
 
-1. Why can a pointer be considered an array and an array a pointer?
+## Why can a pointer be considered an array and an array a pointer?
 
 This is one of those strange parts of C.  For the most part, array syntax and pointer syntax can be used interchangeably.  An array is just a sequence of values, one after the other, starting at some address.  Each item is of the size its type (i.e. 1 byte for a char, 4 bytes for an int).  C has no notion of how long the array is.  You can access memory pass the size of the array, and C won't complain at all!  This would be a IndexOutOfBounds exception in Java, but not C.  C's the gun you can use to do amazing things, or to blow your foot clean off.  Careful!  Pointers reference some piece of memory with a specific type.  Pointer arithmetic allows you to look at memory around that piece of memory.  This is similar to indexing into an array.  We try and stay away from pointer math where possible as it is ugly, and using array syntax is almost always the right thing.
 
 There is one exception where arrays are different from pointers that has to do with statically allocated arrays, but we'll go into that much later. 
 
-2. What are the details of using malloc inside of a fuction? General idea?
+## What are the details of using malloc inside of a fuction? General idea?
 
 I'm probably missing the intention of this question.  Malloc is _only used inside a function_.  Malloc is called anywhere a function can be called to allocate memory.  That memory is just a sequence of bytes, and it is up to you as the programmer to use it correctly!  When you malloc something, it is your job to track that memory so that it can later be deallocated.  If the memory is returned from a function, then the caller must know that they must now track that memory and later free it.
 
-3. Difference between .h and .lib? Definitions from online do not provide much insight.
+## Difference between .h and .lib? Definitions from online do not provide much insight.
 
 .lib is not a thing.  Never seen it.
 
 .h files (header files) are used to define function prototypes (type signatures) so that they can be used in multiple .c files.  You want to always ask yourself where a function is actually implemented (which .c file), and other .c files must include the .h file that defines the prototype.  You can also define a special class of performance-sensitive functions in a .h file, and they can be included directly in any .c file that includes it.  We can talk about what "static" and "inline" mean when used with functions later.
 
-4. What are structures and unions?
+## What are structures and unions?
 
 Further you must push, yes.  Into the swamp of structured data, you must go.
 
 structs are your mechanism in C to define a collection of data that always exists close to each other.  Think of this like all of the data in an object.  I could define a struct for a person that includes:
 
+```c
 struct person {
     int age, height, weight;
     char *name;
 };
+```
 
 All data you want to keep together.  You can allocate it all (aside from the memory backing the ->name) with a single malloc.
 
 Unions are much more confusing.  You can only ever use a single one of the fields in the union at any point in time.  For instance, if a union includes fields for GPA, and for salary:
 
+```c
 union winning {
     int salary;
     double GPA;
 };
+```
 
 A person will probably only have either a salary or a GPA, but both (very few people have a salary while in school).  The union, then will allocate enough memory for only one of the fields, not both.  You can only use the union as one of the fields that is appropriate to the person.
 
 Long story short:  unions are only there to save memory.  They kind of suck.
 
-4a. What are the structures and unions of the basic types: int, char, short, long and double?
+###  What are the structures and unions of the basic types: int, char, short, long and double?
 
 http://i.imgur.com/WuKZd.gif ;-) Does not compute.
 
 structures and unions are types at the same level as ints, chars, shorts, etc...  structs can contain any of these types (including other structs).  ints, shorts, etc, cannot contain other types -- that's the job of structs.
 
-
-
-5. Why would we use bitwise operators? How do they work?
+## Why would we use bitwise operators? How do they work?
 
 Because awesome.
 
@@ -66,9 +63,5 @@ They are most commonly used to store more data in values that you can fit into 3
 
 Again:  Why?  Because you want to better use memory.
 
-12/19/14
-
-Some questions that have been asked in person but should be written so all can see.
-
-6. What are the main factors that affect speed?
-7. C commands to access more compiler warnings?
+## What are the main factors that affect speed?
+## C commands to access more compiler warnings?
