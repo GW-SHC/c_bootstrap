@@ -42,6 +42,12 @@ char   - stores a single character: 'a', 'b', 'c', '1', '5', or '%', '&'\n
 int    - stores a single whole number: 0, 50, -1, 499, 2342351\n
 double - stores a single decimal number: 0.1, 0.111, 452.05, 0.0\n
 
-In addition to these basic types there are modifiers that can affect how large of a value the variable can store.\n For example short int, long int and long double are variables that can hold ranges of [-32767, +32767], [−2147483647, +2147483647], and +/- 1.7e +/- 308 (~15 digits) respectively.\n
+In addition to these basic types there are modifiers that can affect how large of a value the variable can store.\n For example short int, long int and long double are variables that can hold ranges of [-32767, +32767], [−2147483647, +2147483647], and +/- 1.7e +/- 308 (~15 digits) respectively.
 
-### Variables in use
+### Putting it all together
+
+Lets look at an example of everything we have seen so far in code
+
+	$ cat mod02.c
+
+
