@@ -1,6 +1,8 @@
 # Bootstrapping C - Module 1
 ## GWU Systems Hacking Club
 
+So you survived Module 0. Impressive. But you will never make it through me... __MODULE 1__!
+
 This module covers the following concepts:
  - Comments
  - Datatypes and variables
