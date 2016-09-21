@@ -9,7 +9,7 @@ This module covers the following concepts:
 
 ### Comment your code...DO IT
 
-https://s-media-cache-ak0.pinimg.com/564x/b1/4e/04/b14e04d971d4a187883989c4d2c15abb.jpg
+![](https://s-media-cache-ak0.pinimg.com/564x/b1/4e/04/b14e04d971d4a187883989c4d2c15abb.jpg)
 
 Comments, either one lined or in a block, are ignored by the compiler and serve the very important purpose of providing context about your code to other programmers.  
 Reading code to understand how the software behaves is not an easy task and can take a considerable amount of time. Therefore, to make others lives easier, you should always leave comments where you do something nonintuitive. When in doubt, leave a comment to let the reader know why something is or how it works.
