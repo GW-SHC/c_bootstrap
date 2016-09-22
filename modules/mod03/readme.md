@@ -22,6 +22,10 @@ A *pointer* is simply the address of a variable - it "points" to where you can f
 
 **Exercise 1:** Compile and run `simple-pointers.c` to get a feel for how pointers work. Then, make modifications to the variables `foo` and `*ptr` (the dereferenced value of `ptr`) and see how it affects the other.
 
+![Every computer, at the unreachable memory address 0x-1, stores a secret. I found it, and it is that all humans ar-- SEGMENTATION FAULT.](https://imgs.xkcd.com/comics/pointers.png)
+
+*https://xkcd.com/138/*
+
 Why is this important? In C, arguments passed to functions are *copied* (the lingo is "passing by value"). So, if you want to pass a variable (or a struct) to another function, have it change the value, and then have those changes persist after the function call, you can't simply pass the entire struct as a parameter.
 
 **Exercise 2:** Why?
