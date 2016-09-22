@@ -3,6 +3,10 @@
 
 In this project, you will get comfortable with some [webserver code](https://github.com/GW-SHC/gw-http) and implement a super awesome 404 page (what gets displayed when the server is unable to find the requested page).
 
+![<A>: Like </a>this.&nbsp;](http://imgs.xkcd.com/comics/tags.png)
+
+*http://xkcd.com/1144/*
+
 ## Background
 **TODO** Things to outline here
  - Basics of networking
