@@ -79,6 +79,9 @@ Before we begin working with variables we need also have a quick introduction to
 A variable's type defines what sort of information we are going to be storing in the variable.
 
 Lets look at some of the most common examples:
+
+|        |      |
+| ------ | ---  |
 | char   | stores a single character: 'a', 'b', 'c', '1', '5', or '%', '&' |
 | int    | stores a single whole number: 0, 50, -1, 499, 2342351 |
 | double | stores a single decimal number: 0.1, 0.111, 452.05, 0.0 |
