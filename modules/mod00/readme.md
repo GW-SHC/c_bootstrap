@@ -49,7 +49,7 @@ All of these tutorials are on GitHub, a website that hosts git repositories. As 
 
 **Protip:** The SHC mailing list/Slack channel probably contains at least one person who can be that can give you the "it's really pretty simple..." spiel.
 
-**Exercise 4:** [Clone this repository](https://help.github.com/articles/cloning-a-repository/) so you can access the sample code on your machine.
+**Exercise 4:** [Fork this repository](https://help.github.com/articles/fork-a-repo/) to your own account namespace and [clone that repository](https://help.github.com/articles/cloning-a-repository/) so you can access the sample code on your machine.
 
 ### Hello World
 Let's run our first C program. The basic C program looks like this (lines that start with `$` means they should be run as commands):
