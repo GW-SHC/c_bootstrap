@@ -27,7 +27,7 @@ The UNIX shell is a wonderful thing, it lets you manipulate anything on the syst
 Choosing an editor is a personal, almost religious decision. It will be your most trusty sidekick and your loyal companion through good times and in bad, in sickness and health, and until death do you part. There are many wrong choices, but only on right one. The trouble is, the "right" choice varies heavily depending on who you ask. [Begun, the editor wars have](https://en.wikipedia.org/wiki/Editor_war).
 
 ![](http://imgs.xkcd.com/comics/fashion_police_and_grammar_police.png)
-*https://xkcd.com/1735/*
+> *https://xkcd.com/1735/*
 
 Basically, you should just pick something and stick to it. Your choices include, but aren't limited to:
  - [`vim`](https://scotch.io/tutorials/getting-started-with-vim-an-interactive-guide)
@@ -36,7 +36,7 @@ Basically, you should just pick something and stick to it. Your choices include,
  - [`ed`](https://sanctum.geek.nz/arabesque/actually-using-ed/)
 
 ![Real programmers set the universal constants at the start such that the universe evolves to contain the disk with the data they want.](https://imgs.xkcd.com/comics/real_programmers.png)
-*https://xkcd.com/378/*
+> *https://xkcd.com/378/*
 
 **Exercise 3:** Pick an editor (if you can't decide, use `vim`). Now, make some regular text files, put some stuff in them, and save them. Then, use `cat` to display the modifications you made.
 
@@ -45,7 +45,7 @@ All of these tutorials are on GitHub, a website that hosts git repositories. As 
 
 ![If that doesn't fix it, git.txt contains the phone number of a friend of mine who understands git. Just wait through a few minutes of 'It's really pretty simple, just think of branches as...' and eventually you'll learn the commands that will fix everything.](https://imgs.xkcd.com/comics/git.png)
 > If that doesn't fix it, git.txt contains the phone number of a friend of mine who understands git. Just wait through a few minutes of 'It's really pretty simple, just think of branches as...' and eventually you'll learn the commands that will fix everything.
-*http://xkcd.com/1597/*
+> *http://xkcd.com/1597/*
 
 **Protip:** The SHC mailing list/Slack channel probably contains at least one person who can be that can give you the "it's really pretty simple..." spiel.
 
@@ -119,4 +119,4 @@ Once you can run the basic program, your environment is all set up and you're re
 One more thing: you may find that these things are difficult and esoteric to learn/figure out. You're right - they are! But they are the code tools used by our systems still, so there is value in learning them. Don't hesitate to ask questions on Slack (seriously, ask a ton of questions, it's how you learn).
 
 ![](https://imgs.xkcd.com/comics/server_problem.png)
-**https://xkcd.com/1084/**
+> *https://xkcd.com/1084/*
