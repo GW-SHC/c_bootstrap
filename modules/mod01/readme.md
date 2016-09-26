@@ -40,7 +40,7 @@ x = x + 1;
 ```
 
 ![Your IDE's color may vary.](https://imgs.xkcd.com/comics/commented.png)
-*https://xkcd.com/156/*
+> *https://xkcd.com/156/*
 
 ### Datatypes and Variables Introduction
 
@@ -92,6 +92,9 @@ For example `short int`, `long int` and `long double` are variables that can hol
 
 In C, integer variables (`char`, `int`, and `long`) can be `signed` or `unsigned`. This affects the binary representation of the variable in memory (how the data is actually stored). As the name suggests, `unsigned` variables can only store positive numbers. Additionally, it is possible for a variable to "overflow". Consider teh case where you add one to a variable constantly - once you perform the addition more times than the maximum size of the variable the value will "wrap around" back to the minimum. This is an effect of the way the number is stored in memory.
 
+![](https://imgs.xkcd.com/comics/cant_sleep.png)
+> *https://xkcd.com/571/*
+
 There are two phases to using variables in a C program - declaration and initialization. Before you use a variable, you must "declare" it to the compiler - you must specify what the type of the variable is and what your name is. Then, after that, you can assign values to and read from the variable. An interesting note about variables: C does not guarantee an uninitialized variable has any default values. The default value is actually whatever was in that memory before you were using it (e.g. garbage). Moral of the story: always initialize your variables. Here is an example:
 
 ```c
@@ -101,7 +104,7 @@ myNumber = 1337;
 printf("My number is %dl\n", myNumber);
 ```
 
-\* In C, there is no explicit `String` type. Instead, the type `char *` is used. This will be explained more in Module 3.
+**Note:** In C, there is no explicit `String` type. Instead, the type `char *` is used. This will be explained more in Module 3.
 
 ### Control Structures
 
@@ -111,14 +114,16 @@ The two most basic control structures are:
 1. `if`
 2. `else`
 
-	if (statement is true) {
-		/* Do something awesome */
-	} else {
-		/* Do something less awesome */
-	}
+```c
+if (statement is true) {
+	/* Do something awesome */
+} else {
+	/* Do something less awesome */
+}
+```
 
 If the statement we place in the `if` statement is true we will execute the code block within the {...} brackets otherwise we will execute what is in the `else` {...} block. Think of the `else` block as a catch-all case. The only condiditon we need to execute the `else` block is for the prior `if` to be false.
-You can have an `if` statement that is by itself, but you can not have an `else` statement by itself, there must always be an `if` that comes before it. 
+You can have an `if` statement that is by itself, but you can not have an `else` statement by itself, there must always be an `if` that comes before it.
 
 **Why do you think this is so?**
 
@@ -127,25 +132,30 @@ You can have an `if` statement that is by itself, but you can not have an `else`
 Looping is very useful thing to do and can be acomplished in either a `for` or `while` loop.
 The following is only an example of the syntax, see the sections below for a code example and don't be affraid to try it out as much as possible yourself!
 
-
 `For` loops itterate a given n number of times:
 
-	int i;
-	for(i = 0 ; i < 10 ; i = 1 + i) {
-		/* Do something on every loop */
-	}
+```c
+int i;
+for(i = 0 ; i < 10 ; i = 1 + i) {
+	/* Do something on every loop */
+}
+```
 
 In this case, n is 10 and we will run as long as i, starting at 0 and increasing by one on every loop, is less than 10.
 The initial term `i = 0` is the start value assign to i at the beginning of the loop. This only happens once. The middle term `i < 10` is the value we compare to every time the loop iterates. The last term `i = i + 1` is the value that i is increased by every loop. How many times would the above loop iterate if we did `i = i + 2`? How about `i = i + 3`?
 
 `While` loops itterate while something is true. The equivalent `while` loop:
 
-	int i = 0;
-	while(i < 10) {
-		/* Do something on every loop */
-		i++ /* fancy way of writing i = i + 1 */
-	}
+```c
+int i = 0;
+while(i < 10) {
+	/* Do something on every loop */
+	i++ /* fancy way of writing i = i + 1 */
+}
+```
 
+![](https://imgs.xkcd.com/comics/loop.png)
+> *https://xkcd.com/1411/*
 
 ### Functions
 
