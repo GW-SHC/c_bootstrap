@@ -8,9 +8,14 @@ In this project, you will get comfortable with some [webserver code](https://git
 *http://xkcd.com/1144/*
 
 ## Background
-**TODO** Things to outline here
- - Basics of networking
- - C socket APIs
+How does a webserver work, might you ask. Good news! The code linked above is a nice concice implementation to uses as a reference. It is important to take some time and read the code to get a feeling for how it works. Here are some tips for reading a new codebase:
+ - Know where to start. Try and find the `main` function or file and trace through a simple set of execution steps
+ - Search the repostiory. `git grep -n` is a command you can use to search for a string in all files in the code repository. The `-n` option will tell the command to print line numbers in the file (in `vim` you can navigate to line X in the current file by running `: X`) in normal mode.
+ - Get good at identifying lines for error checking, they are typically at the beginning of a function. Once you identify what lines are error checking, you can typically ignore it, it's probably not critical to the operation of the function. This lets you distill the code you have to understand down to only the core parts.
+ - Make a decision about whether you traverse the code "depth first" or "breadth first" or a balance of the two. You don't want to investigate every function you come across, just the "important" ones (which you will have to determine).
+ - Understand which function calls are to the kernel (or syscalls). You can reference the manual for these functions by using the `man` function. For example, you can see details about the `read` function by running `man 2 read` (you may need to [install these packages](http://superuser.com/questions/40609/how-to-install-man-pages-for-c-standard-library-functions-in-ubuntu)).
+
+A webserver uses the "socket" APIs available. A "socket" is a connection to the network through the kernel. The server accepts a request from the user over a socket (by default on port 8080), tries to load the file specified into a buffer using `read`, and then writes it back out to the user with `write`. The critical code is the `content_get` function in `content.c`. Understanding how this function works is critical for understanding how requests are served.
 
 ## Getting Started
 First, make sure you have a GitHub account. Then, read these articles to get a grasp on some of the concepts involved with managing your code using `git`:
