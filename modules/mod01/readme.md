@@ -15,12 +15,15 @@ This module covers the following concepts:
 
 Comments, either one lined or in a block, are ignored by the compiler and serve the very important purpose of providing context about your code to other programmers.
 Reading code to understand how the software behaves is not an easy task and can take a considerable amount of time. Therefore, to make others lives easier, you should always leave comments where you do something nonintuitive. When in doubt, leave a comment to let the reader know why something is or how it works.
-	// a one line comment
-	/* Also a one lined comment */
-	/*
-	 * This is a
-	 * comment block
-	 */
+
+```c
+// a one line comment
+/* Also a one lined comment */
+/*
+ * This is a
+ * comment block
+ */
+```
 
 However, many people starting out tend to leave comments like the following:
 
@@ -46,12 +49,15 @@ x = x + 1;
 
 So far we have:
 
-	#include <stdio.h>
+```c
+#include <stdio.h>
 
-	int
-	main() {
-	    printf("Hello World!\n");
-	}
+int
+main() {
+	printf("Hello World!\n");
+}
+```
+
 Cool, we can print a nice sentence or __*String*__ of text.
 But what happens if we don't want to use the string "Hello World"?
 We would have to go back and hardcode in a new string to print.
@@ -68,11 +74,15 @@ exactly what the value in the variable is.
 In math this is equivalent to what we do all the time in algebra.
 We can replace:
 
-	2 + 2 = 4
+```
+2 + 2 = 4
+```
 
 With:
 
-	x + y = ?
+```
+x + y = ?
+```
 
 and we can store any value we want in x and y.
 Before we begin working with variables we need also have a quick introduction to __*types*__.
@@ -85,7 +95,7 @@ Lets look at some of the most common examples:
 | char   | stores a single character: 'a', 'b', 'c', '1', '5', or '%', '&' |
 | int    | stores a single whole number: 0, 50, -1, 499, 2342351 |
 | double | stores a single decimal number: 0.1, 0.111, 452.05, 0.0 |
-| String\* | stores a string of characters: "<insert manuscrip of Shrek here>", "a;sldjavmawo;e", "Gabé Parmesan" |
+| String | stores a string of characters: "<insert manuscrip of Shrek here>", "a;sldjavmawo;e", "Gabé Parmesan" |
 
 In addition to these basic types there are modifiers that can affect how large of a value the variable can store.
 For example `short int`, `long int` and `long double` are variables that can hold ranges of [-32767, +32767], [−2147483647, +2147483647], and +/- 1.7e +/- 308 (~15 digits) respectively.
@@ -114,7 +124,7 @@ The two most basic control structures are:
 1. `if`
 2. `else`
 
-```c
+```
 if (statement is true) {
 	/* Do something awesome */
 } else {
@@ -159,12 +169,21 @@ while(i < 10) {
 
 ### Functions
 
-TODO
+Many times, you'll want to group blocks of code together that you can execute multiple times. We call these **functions**. You are already familiar with one function, which you see in every program, `main`. Here is the anatomy of a functions:
+```
+return_type function_name( parameters) {
+    // Do awesome stuff
+}
+```
 
-### Putting it all together
+A function may return a value back to its caller, this is the *return_type*. If you do not want to return a value, use the `void` type. You can also pass parameters into a function: these are put in the parameter list. They are formatted as `type variable_name`. For example, if you wish to pass two integer variables to a function that returns another integer, the function prototype would look like:
 
-Lets take a look at everything covered in this module in code
+```c
+int my_function(int var1, int var2) {
+    /* Do stuff with var1 and var2 */
+}
+```
 
-	$ cat mod02.c
+In C, a function needs to be declared before it is used - remember, the compiler just parses the program from top to bottom. This is where header files are useful: they can give the compiler a "heads up" about which functions will be defined in the program, so that you can use them before they are defined.
 
-TODO
+**Exercise:** Look at the file `max.c`, which is a program to compute the maximum of two numbers. Read it and modify it, adding an implementation for `min` function.
