@@ -34,12 +34,11 @@ Now, try and read through the existing code and understand the following
  - Where a request is processed
  - What code finds and returns the specified html file
 
-**TODO** find Gabe's slides for reading large codebases and link them somehow
-
 ## The Project
 You should do the following
  - Create an awesome html page to show when the server can't find what was requested
- - Modify the server to return that page
+ - Modify the server to return that page instead of a constant string
+ - You will mainly be modifying the `error_resp` function in `content.c`
 
 ## Sharing Your Work
  - Push your code to its own branch in *your fork* of the repository

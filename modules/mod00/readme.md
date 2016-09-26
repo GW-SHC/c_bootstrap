@@ -115,3 +115,8 @@ all:
 
 ### Going from Here
 Once you can run the basic program, your environment is all set up and you're ready to start learning! From here, these modules roughly follow the cs1111 (intro to software development in Java) course as outlined [here](https://www.seas.gwu.edu/~simhaweb/cs1111/coursework.html) and the cs1112 course (basic Algorithms and Data Structures) as outlined [here](https://www.seas.gwu.edu/~simhaweb/cs133/coursework.html). Much of the java syntax and program components will not be discussed here, since they'll translate pretty cleanly to C. We'll keep this about the fun stuff :)
+
+One more thing: you may find that these things are difficult and esoteric to learn/figure out. You're right - they are! But they are the code tools used by our systems still, so there is value in learning them. Don't hesitate to ask questions on Slack (seriously, ask a ton of questions, it's how you learn).
+
+![](https://imgs.xkcd.com/comics/server_problem.png)
+**https://xkcd.com/1084/**
