@@ -18,6 +18,9 @@ To start off, we need access to a C compiler. We recommend you use a computer ru
 
 **Exercise 1:** Find a computer that has a UNIX-like shell.
 
+![](https://imgs.xkcd.com/comics/cautionary.png)
+> https://xkcd.com/456/
+
 ### The UNIX Shell
 The UNIX shell is a wonderful thing, it lets you manipulate anything on the system and you can do things much faster entirely with the keyboard. Let's hop in our time machine, head back to 1983, and work in simple colors with only a terminal at our disposal. At the shell prompt, you can input commands (invoke text editors, compile and run files, run other programs, etc) to *do stuff*. [This tutorial set](https://www.tutorialspoint.com/unix/unix-getting-started.htm) is something you should skim through and understand some basics on how to interact with a shell.
 
