@@ -8,6 +8,7 @@ This module covers the following concepts:
  - Datatypes and variables
  - Control Structures
  - Functions
+ - Coding Style
 
 ### Comment your code...DO IT
 
@@ -171,15 +172,17 @@ while(i < 10) {
 
 Many times, you'll want to group blocks of code together that you can execute multiple times. We call these **functions**. You are already familiar with one function, which you see in every program, `main`. Here is the anatomy of a functions:
 ```
-return_type function_name( parameters) {
+return_type
+function_name( parameters) {
     // Do awesome stuff
 }
 ```
 
-A function may return a value back to its caller, this is the *return_type*. If you do not want to return a value, use the `void` type. You can also pass parameters into a function: these are put in the parameter list. They are formatted as `type variable_name`. For example, if you wish to pass two integer variables to a function that returns another integer, the function prototype would look like:
+A function may return a value back to its caller, this is the *return_type*. If you do not want to return a value, use the `void` type. A good coding style to practice is to put the return value on and function name on separate lines. This enables one to scan a c file quickly; your eyes only have to stay on the left side of the file. You can also pass parameters into a function: these are put in the parameter list. They are formatted as `type variable_name`. For example, if you wish to pass two integer variables to a function that returns another integer, the function prototype would look like:
 
 ```c
-int my_function(int var1, int var2) {
+int
+my_function(int var1, int var2) {
     /* Do stuff with var1 and var2 */
 }
 ```
@@ -187,3 +190,9 @@ int my_function(int var1, int var2) {
 In C, a function needs to be declared before it is used - remember, the compiler just parses the program from top to bottom. This is where header files are useful: they can give the compiler a "heads up" about which functions will be defined in the program, so that you can use them before they are defined.
 
 **Exercise:** Look at the file `max.c`, which is a program to compute the maximum of two numbers. Read it and modify it, adding an implementation for `min` function.
+
+### Coding Style
+
+Having a consistent syntactical style for the way we write code is very important. If a project is made up of many different coding styles it can make it very difficult to read code productivly. Different teams will have different rules for how code should be structured and it is imporant that everyone buys into this same standard.
+
+See [The Composite Style Guide](https://github.com/gparmer/Composite/blob/master/doc/style_guide/composite_coding_style.pdf) on how we strucutre our code.
