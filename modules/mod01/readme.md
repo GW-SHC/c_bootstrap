@@ -98,6 +98,21 @@ Lets look at some of the most common examples:
 | double | stores a single decimal number: 0.1, 0.111, 452.05, 0.0 |
 | String | stores a string of characters: "<insert manuscrip of Shrek here>", "a;sldjavmawo;e", "Gabé Parmesan" |
 
+If you are familiar with the java programming language, you might be crying out in anger: "Where are my boolean types!?". Well, sucks. C doesn't have booleans. Instead, **all** variables can emulate this notion of _true_ and _false_. Lets look at an example.
+
+```c
+int a = 1;
+int b = 5;
+int c = 0;
+int d = -1;
+
+if (a) /* Do something*/
+if (b) /* Do something more */
+if (c) /* Do all the things */
+if (d) /* Meh */
+```
+Which of these do you expect to resolve to _true_? Most people would guess a, maybe b. Those people would be right. What about c and d? C does not get printed, but strangly d does. In C, everything that is not 0 or NULL resovles to _true_.
+
 In addition to these basic types there are modifiers that can affect how large of a value the variable can store.
 For example `short int`, `long int` and `long double` are variables that can hold ranges of [-32767, +32767], [−2147483647, +2147483647], and +/- 1.7e +/- 308 (~15 digits) respectively.
 
@@ -187,7 +202,7 @@ my_function(int var1, int var2) {
 }
 ```
 
-In C, a function needs to be declared before it is used - remember, the compiler just parses the program from top to bottom. This is where header files are useful: they can give the compiler a "heads up" about which functions will be defined in the program, so that you can use them before they are defined.
+In C, a function needs to be declared before it is used - remember, the compiler just parses the program from top to bottom. This is where header files are useful: they can give the compiler a "heads up" about which functions will be defined in the program, so that you can use them before they are defined. In java we import other files, in C we use #include.
 
 **Exercise:** Look at the file `max.c`, which is a program to compute the maximum of two numbers. Read it and modify it, adding an implementation for `min` function.
 
