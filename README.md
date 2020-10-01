@@ -1,6 +1,6 @@
 # C Programming bootstrap
 
-Anyone wanting to understand and do systems programming must know C.  You might use other languages, but it is important to understand the lowest-level programming language (aside from assembly).
+Anyonewho wants to understand and do system programming must know C programming language.  You might use other languages, but it is important to understand the lowest-level programming language (aside from assembly).
 
 # Learning
 This repository contains a number of tutorials in the `modules` directory. They will walk you through many of the core concepts surrounding C and systems programming. Go through them at your own pace, making sure to do the exercises and projects along the way. Once you are done, you can keep the code in your own fork of this repository, and add them to the main one via a pull request. Put your code in the directory `submission/<your name>`.
@@ -26,7 +26,7 @@ What resources have you found?  Post them in this repo!
 
 # Projects
 
-- See https://github.com/GW-SHC/gw-http for code implementing a basic web server in C. Some of the assignments will build on this codebase
+- See https://github.com/GW-SHC/gw-http for code to implement a basic web server in C. Some of the assignments will be built on this codebase.
 - See https://github.com/gparmer/c_object_models_instructional for examples of different types of object orientation implemented in C.
 - See https://github.com/gparmer/tlr for a simple bitcode implementation in C for a language.  The "Tiny Language Runtime".
 
